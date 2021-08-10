@@ -16,7 +16,7 @@ module.exports = smart(baseConfig, {
     mode: 'production',
     devtool: 'source-map',
     output: {
-        path: path.resolve('dist'),
+        path: path.resolve('docs'),
         filename: 'js/[name].[contenthash:8].bundle.js',
         chunkFilename: 'js/[name].[contenthash:8].chunk.js',
         publicPath: '/',
