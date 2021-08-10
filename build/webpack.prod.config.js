@@ -19,7 +19,7 @@ module.exports = smart(baseConfig, {
         path: path.resolve('dist'),
         filename: 'js/[name].[contenthash:8].bundle.js',
         chunkFilename: 'js/[name].[contenthash:8].chunk.js',
-        publicPath: '/f2e/mito-error-example/',
+        publicPath: '/',
     },
     module: {
         rules: [].concat(styleLoaders),
