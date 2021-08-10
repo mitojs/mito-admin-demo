@@ -19,7 +19,7 @@ module.exports = smart(baseConfig, {
         path: path.resolve('docs'),
         filename: 'js/[name].[contenthash:8].bundle.js',
         chunkFilename: 'js/[name].[contenthash:8].chunk.js',
-        publicPath: '/',
+        publicPath: '/mito-admin-demo',
     },
     module: {
         rules: [].concat(styleLoaders),

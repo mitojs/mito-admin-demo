@@ -93,7 +93,7 @@ if (process.env.NODE_ENV === 'development') {
   console.log('prod mockServiceWorker')
   worker.start({
     serviceWorker: {
-      url: '/mockServiceWorker.js',
+      url: '/mito-admin-demo/mockServiceWorker.js',
     },
   })
 }
