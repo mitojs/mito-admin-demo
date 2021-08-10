@@ -1,0 +1,47 @@
+@shadow-base:0 6px 10px rgba(36, 37, 38, 0.08);
+// 全局重ant 样式
+// .ant-menu {
+//     margin: 16px 0 0 8px!important;
+// }
+// .ant-menu:not(.ant-menu-horizontal) .ant-menu-item-selected {
+//     background-color: #1890ff!important;
+//     font-weight: 700;
+//     color: #fff;
+//     transition: all 0.5s;
+// }
+// .ant-menu-inline {
+//     background-color: #f0f2f5!important;
+// }
+// .ant-layout-sider-light {
+//     background-color: #f0f2f5!important;
+// }
+
+// .ant-menu-item {
+//     border-radius: 4px;
+// }
+
+.site-page-header {
+  position: fixed !important;
+  z-index: 1000;
+  width: 100vw;
+  background-color: rgba(255, 255, 255, 0.9) !important;
+  .ant-page-header-heading {
+    display: flex;
+    justify-content: space-between;
+  }
+}
+
+// card
+.ant-card {
+  box-shadow: @shadow-base;
+}
+
+// Row Col自适应时不需要换行
+.no-wrap-row {
+  flex-flow: nowrap !important;
+}
+
+.ant-badge-status-dot {
+  width: 8px;
+  height: 8px;
+}

@@ -1,0 +1,25 @@
+.main-content {
+  background: #f0f2f5;
+}
+
+.main-content-enter {
+  opacity: 1;
+  transform: scale(1.1);
+}
+
+.main-content-enter-active {
+  opacity: 1;
+  transform: scale(1);
+  transition: opacity 500ms, transform 500ms;
+}
+
+.main-content-exit {
+  opacity: 1;
+  transform: scale(1);
+}
+
+.main-content-exit-active {
+  opacity: 0;
+  transform: scale(0.8);
+  transition: opacity 500ms, transform 500ms;
+}

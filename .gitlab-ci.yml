@@ -1,0 +1,39 @@
+stages:
+  - install_deps
+  - depoly_dev
+  - depoly_master
+
+cache:
+  paths:
+    - node_modules/
+
+install_deps:
+  stage: install_deps
+  script:
+    - sudo npm i
+  rules:
+    - if: '$CI_COMMIT_BRANCH =~ /^qatest/'
+    - if: '$CI_COMMIT_BRANCH =~ /^pre-release/'
+    - if: '$CI_COMMIT_TAG'
+  tags:
+    - node:12.14
+
+depoly_dev:
+  stage: depoly_dev
+  script:
+    - npm run build:dev
+    - devops dp --lintCheck=false --delOutputDir=false
+  rules:
+    - if: '$CI_COMMIT_BRANCH =~ /^qatest/'
+  tags:
+    - node:12.14
+
+depoly_master:
+  stage: depoly_master
+  script:
+    - npm run build:prod
+    - devops dp --lintCheck=false --delOutputDir=false
+  rules:
+    - if: '$CI_COMMIT_TAG'
+  tags:
+    - node:12.14

@@ -1,0 +1,36 @@
+.container {
+  height: 140px;
+}
+.tagTtem {
+  box-shadow: 0 1px 4px 0 rgba(0, 0, 0, 0.1);
+  height: 110px;
+  background-color: #fff;
+  margin: 20px 0 0 0;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
+  justify-content: space-between;
+  .title {
+    text-align: center;
+    font-size: 14px;
+    font-weight: 500;
+  }
+  .value {
+    text-align: center;
+    font-size: 12px;
+    font-weight: 500;
+  }
+}
+.tagTtem:hover {
+  span {
+    transform: scale(1.2) rotate(-45deg);
+    transition: all 0.5s ease;
+    opacity: 0.6;
+  }
+}
+.tagTtem {
+  span {
+    transition: all 0.5s;
+  }
+}

@@ -1,0 +1,47 @@
+.project {
+  display: flex;
+  flex-direction: column;
+  .error {
+    display: flex;
+    cursor: pointer;
+    flex-direction: column;
+    margin-right: 10px;
+    .url {
+      color: rebeccapurple;
+      font-size: 13px;
+    }
+    .message {
+      color: #2f2936;
+      font-size: 14px;
+      background-color: #f6f8fa;
+      padding: 5px 0px 5px 16px;
+      margin: 5px 0px;
+      border-left: 3px solid #2db7f5;
+      width: 100%;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      white-space: nowrap;
+    }
+    .timec {
+      display: flex;
+      align-items: center;
+      margin-right: 10px;
+      margin: 5px 10px 5px 0px;
+      color: #2f2936;
+      .time {
+        font-size: 12px;
+        color: #2f2936;
+        font-weight: 400;
+      }
+    }
+  }
+
+  .info {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    .fav {
+      margin-right: 10px;
+    }
+  }
+}

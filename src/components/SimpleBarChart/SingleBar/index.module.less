@@ -1,0 +1,68 @@
+.singleBarWrapper {
+  display: flex;
+  // flex-direction: row;
+  align-items: center;
+  position: relative;
+  cursor: pointer;
+
+  .barPopUp {
+    text-shadow: none;
+    // width: 126px;
+    height: 31px;
+    position: absolute;
+    top: -34px;
+    left: 17%;
+    border-radius: 10px;
+    background-color: bisque;
+    color: black;
+    display: none;
+  }
+}
+
+.singleBarXAxis {
+  font-size: 12px;
+  margin: 0;
+  width: 90px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.parcentage {
+  position: absolute;
+  left: 1%;
+  font-size: 12px;
+  color: gray;
+  top: -5%;
+  // text-shadow: 2px 2px grey;
+}
+
+.nameMargin {
+  margin-right: 10px;
+}
+
+.singleBarWrapper:hover .barPopUp {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  // display: block;
+}
+.singleBarPath {
+  animation: bounce linear 600ms;
+  margin: auto;
+  // transform-origin: 0px 50%;
+}
+
+@keyframes bounce {
+  0% {
+    transform: rotateY(90deg);
+  }
+
+  80% {
+    transform: rotateY(0deg);
+  }
+
+  100% {
+    transform: rotateY(10deg);
+  }
+}

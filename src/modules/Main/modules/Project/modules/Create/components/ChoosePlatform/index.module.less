@@ -1,0 +1,40 @@
+.contain {
+  display: flex;
+  flex-wrap: wrap;
+  .item {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 16px 24px 16px 24px;
+    border-radius: 4px;
+    margin: 0 10px 10px 0;
+    cursor: pointer;
+    &:hover {
+      background: rgb(235, 235, 239);
+    }
+    &.active {
+      background: rgb(236, 245, 253);
+    }
+    .close {
+      position: absolute;
+      background: #fff;
+      border-radius: 50%;
+      top: 0;
+      right: 0;
+      transform: translate(8px, -8px);
+    }
+    > h3 {
+      flex-grow: 1;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 100%;
+      text-align: center;
+      font-size: 15px;
+      margin: 0px;
+      padding: 0px 4px;
+      line-height: 1.2;
+    }
+  }
+}

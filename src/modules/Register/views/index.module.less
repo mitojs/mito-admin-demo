@@ -1,0 +1,96 @@
+#register {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  background: #3790da;
+  .translation {
+    position: fixed;
+    right: 30px;
+    top: 100px;
+  }
+  .registerForm {
+    width: 100%;
+    height: 80%;
+    margin: 0px 100px;
+    border-radius: 15px;
+    padding: 30px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    // background: white;
+    .registerTitle {
+      margin: 0px 0px 20px 0px;
+      color: white;
+
+      position: relative;
+      animation-name: runInTitle;
+      animation-duration: 1.5s;
+      animation-fill-mode: forwards;
+    }
+    @keyframes runInTitle {
+      0% {
+        left: -150px;
+        top: 0px;
+      }
+      100% {
+        left: 0px;
+        top: 0px;
+      }
+    }
+    .formProperty {
+      background: white;
+      padding-right: 70px;
+      padding-top: 30px;
+      width: 465px;
+      border-radius: 28px;
+      padding: 50px 70px 25px 0px;
+
+      position: relative;
+      animation-name: runInForm;
+      animation-duration: 1.5s;
+      animation-fill-mode: forwards;
+    }
+    @keyframes runInForm {
+      0% {
+        left: 350px;
+        top: 0px;
+      }
+      100% {
+        left: 0px;
+        top: 0px;
+      }
+    }
+    .registerImage {
+      width: 344px;
+      height: 349px;
+      margin-top: 110px;
+      z-index: 2;
+
+      position: relative;
+      animation-name: runInImage;
+      animation-duration: 1.5s;
+      animation-fill-mode: forwards;
+    }
+    @keyframes runInImage {
+      0% {
+        left: 0px;
+        top: 0px;
+      }
+      100% {
+        left: 150px;
+        top: 0px;
+      }
+    }
+  }
+  .copyRight {
+    position: absolute;
+    bottom: 40px;
+    color: white;
+  }
+  [aria-checked='false'] {
+    background-color: pink;
+  }
+}
