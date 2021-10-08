@@ -14,6 +14,7 @@ declare namespace Events {
     PROMISE_ERROR = 'PROMISE_ERROR',
   }
   export interface ReportDataType {
+    elapsedTime?: number
     type?: ERRORTYPES
     message?: string
     url: string

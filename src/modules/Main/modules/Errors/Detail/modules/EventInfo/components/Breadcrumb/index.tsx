@@ -43,21 +43,21 @@ function XhrDescription(props: { row: RowType }) {
   const { data } = row
   const { request } = data
   const onClickTraceId = (traceId: string) => {
-    const from_time = moment().subtract(7, 'days').format('YYYY-MM-DD')
-    const client_trace_id = traceId
-    const url = `${config.apigwLog}`
-    const remote = eventInfo.ip
-    const result = {
-      from_time,
-      client_trace_id,
-      remote,
-    }
-    const str = Object.entries(result)
-      .map(([key, value]) => {
-        return `${key}=${value}`
-      })
-      .join(';')
-    window.open(`${url};${str}`)
+    // const from_time = moment().subtract(7, 'days').format('YYYY-MM-DD')
+    // const client_trace_id = traceId
+    // const url = `${config.apigwLog}`
+    // const remote = eventInfo.ip
+    // const result = {
+    //   from_time,
+    //   client_trace_id,
+    //   remote,
+    // }
+    // const str = Object.entries(result)
+    //   .map(([key, value]) => {
+    //     return `${key}=${value}`
+    //   })
+    //   .join(';')
+    // window.open(`${url};${str}`)
   }
   if (row.category !== BREADCRUMBCATEGORYS.EXCEPTION) {
     return (
@@ -87,8 +87,13 @@ function XhrDescription(props: { row: RowType }) {
               </Tooltip>
             </Col>
             <Col span={24}>
-              <span className={(styles.status, styles.weight)}>message:</span>
-              {data.message}
+              <Row>
+                <Col span={6}>
+                  <span className={(styles.status, styles.weight)}>message:</span>
+                  {data.message}
+                </Col>
+                <Col span={6}>接口耗时:{data.elapsedTime}ms</Col>
+              </Row>
             </Col>
           </Row>
         </div>
@@ -156,7 +161,7 @@ function VueDescriptiopn(props: DesPropsType) {
 }
 function UnhandledrejectionDescription(props: DesPropsType) {
   const { data } = props
-  return <div>{data.message}</div>
+  return <div>{data.message ? `reason:${data.message}` : ''}</div>
 }
 
 function CodeErrorDescription(props: DesPropsType) {
@@ -164,9 +169,7 @@ function CodeErrorDescription(props: DesPropsType) {
   const { stack } = data
   return (
     <div>
-      <Row gutter={[0, 10]}>
-        {data.name}:{data.message}
-      </Row>
+      <Row gutter={[0, 10]}>错误信息:{data.message}</Row>
       {Array.isArray(stack)
         ? stack.map((item, index) => {
             return (
