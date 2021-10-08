@@ -160,11 +160,13 @@ function UnhandledrejectionDescription(props: DesPropsType) {
 }
 
 function CodeErrorDescription(props: DesPropsType) {
-  const {
-    data: { stack },
-  } = props
+  const { data } = props
+  const { stack } = data
   return (
     <div>
+      <Row gutter={[0, 10]}>
+        {data.name}:{data.message}
+      </Row>
       {Array.isArray(stack)
         ? stack.map((item, index) => {
             return (
@@ -264,6 +266,17 @@ function WxShareOnMessageDescription(props: DesPropsType) {
     </Row>
   )
 }
+function ReactDescription(props: DesPropsType) {
+  const { data } = props
+  const { stack } = data
+  return (
+    <div>
+      <Row gutter={[0, 10]}>
+        {data.name}:{data.message}
+      </Row>
+    </div>
+  )
+}
 
 function DescriptionColumn(props: { row: RowType }) {
   const { row } = props
@@ -282,6 +295,7 @@ function DescriptionColumn(props: { row: RowType }) {
       return <VueDescriptiopn data={row.data}></VueDescriptiopn>
     case BREADCRUMBTYPES.UNHANDLEDREJECTION:
       return <UnhandledrejectionDescription data={row.data}></UnhandledrejectionDescription>
+    case BREADCRUMBTYPES.REACT:
     case BREADCRUMBTYPES.CODE_ERROR:
       return <CodeErrorDescription data={row.data}></CodeErrorDescription>
     case BREADCRUMBTYPES.CUSTOMER:

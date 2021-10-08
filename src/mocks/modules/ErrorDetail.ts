@@ -153,7 +153,7 @@ eventInfoMap.set(ErrorDataType.react, {
   request: 'null',
   response: 'null',
   sdkVersion: '1.2.2',
-  sdkName: '@zyf2e/mitojs',
+  sdkName: 'mitojs',
   customTag: 'null',
   cookies: '{"user_token":"C480B1F19AB94DF381B05AB2657B4C6E"}',
   stack:
@@ -164,7 +164,7 @@ eventInfoMap.set(ErrorDataType.react, {
       type: 'Xhr',
       category: 'http',
       data: {
-        type: 'HTTP_ERROR',
+        type: 'HTTP',
         url: 'https://test.com/#/errors',
         time: 1610950227914,
         elapsedTime: 216,
@@ -202,7 +202,7 @@ eventInfoMap.set(ErrorDataType.react, {
             col: 0,
           },
         ],
-        type: 'JAVASCRIPT_ERROR',
+        type: 'JAVASCRIPT',
       },
       level: 'error',
       time: 1610950228010,
@@ -211,7 +211,7 @@ eventInfoMap.set(ErrorDataType.react, {
       type: 'Xhr',
       category: 'http',
       data: {
-        type: 'HTTP_ERROR',
+        type: 'HTTP',
         url: 'https://test.com/#/errors',
         time: 1610950228013,
         elapsedTime: 315,
@@ -233,7 +233,7 @@ eventInfoMap.set(ErrorDataType.react, {
       type: 'Xhr',
       category: 'http',
       data: {
-        type: 'HTTP_ERROR',
+        type: 'HTTP',
         url: 'https://test.com/#/errors',
         time: 1610950228053,
         elapsedTime: 58,
@@ -255,7 +255,7 @@ eventInfoMap.set(ErrorDataType.react, {
       type: 'Xhr',
       category: 'http',
       data: {
-        type: 'HTTP_ERROR',
+        type: 'HTTP',
         url: 'https://test.com/#/errors',
         time: 1610950228274,
         elapsedTime: 278,
@@ -277,7 +277,7 @@ eventInfoMap.set(ErrorDataType.react, {
       type: 'Xhr',
       category: 'http',
       data: {
-        type: 'HTTP_ERROR',
+        type: 'HTTP',
         url: 'https://test.com/#/errors',
         time: 1610950228318,
         elapsedTime: 323,
@@ -299,7 +299,7 @@ eventInfoMap.set(ErrorDataType.react, {
       type: 'Xhr',
       category: 'http',
       data: {
-        type: 'HTTP_ERROR',
+        type: 'HTTP',
         url: 'https://test.com/#/errors',
         time: 1610950228638,
         elapsedTime: 292,
@@ -343,7 +343,7 @@ eventInfoMap.set(ErrorDataType.react, {
       type: 'Xhr',
       category: 'http',
       data: {
-        type: 'HTTP_ERROR',
+        type: 'HTTP',
         url: 'https://test.com/#/errors',
         time: 1610950257161,
         elapsedTime: 113,
@@ -365,7 +365,7 @@ eventInfoMap.set(ErrorDataType.react, {
       type: 'Xhr',
       category: 'http',
       data: {
-        type: 'HTTP_ERROR',
+        type: 'HTTP',
         url: 'https://test.com/#/errors',
         time: 1610950257655,
         elapsedTime: 237,
@@ -409,7 +409,7 @@ eventInfoMap.set(ErrorDataType.react, {
       type: 'Xhr',
       category: 'http',
       data: {
-        type: 'HTTP_ERROR',
+        type: 'HTTP',
         url: 'https://test.com/#/errors',
         time: 1610950275374,
         elapsedTime: 533,
@@ -437,7 +437,7 @@ eventInfoMap.set(ErrorDataType.react, {
     },
     { type: 'Console', category: 'debug', data: { args: [{}], level: 'error' }, level: 'error', time: 1610950280246 },
     {
-      type: 'Code Error',
+      type: 'React',
       category: 'exception',
       data: {
         time: 1610950280248,
@@ -454,7 +454,7 @@ eventInfoMap.set(ErrorDataType.react, {
             column: 5988,
           },
         ],
-        type: 'JAVASCRIPT_ERROR',
+        type: 'REACT',
         errorId: -1811448882,
       },
       level: 'error',
@@ -462,7 +462,7 @@ eventInfoMap.set(ErrorDataType.react, {
     },
   ],
   trackerId: 'fb9d9be0-5953-11eb-8525-e55bab7a8449',
-  type: 'JAVASCRIPT_ERROR',
+  type: 'JAVASCRIPT',
   ua:
     'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/87.0.4280.141 Safari/537.36',
   url: 'https://test.com/#/errors',
@@ -496,7 +496,7 @@ eventInfoMap.set(ErrorDataType.vue, {
   os: 'Android',
   osVersion: '9',
   customTag: 'null',
-  type: 'HTTP_ERROR',
+  type: 'HTTP',
   url: 'https://a.test.com/#/binding-doctors',
   record: 'null',
   request: 'null',
@@ -511,7 +511,7 @@ eventInfoMap.set(ErrorDataType.vue, {
       type: 'Xhr',
       category: 'http',
       data: {
-        type: 'HTTP_ERROR',
+        type: 'HTTP',
         url: 'https://a.test.com/#/binding-doctors',
         time: 1626160268616,
         elapsedTime: 165,
@@ -535,7 +535,7 @@ eventInfoMap.set(ErrorDataType.vue, {
       type: 'Xhr',
       category: 'http',
       data: {
-        type: 'HTTP_ERROR',
+        type: 'HTTP',
         url: 'https://a.test.com/#/binding-doctors',
         time: 1626160268701,
         elapsedTime: 2317,
@@ -580,7 +580,7 @@ eventInfoMap.set(ErrorDataType.vue, {
       type: 'Xhr',
       category: 'http',
       data: {
-        type: 'HTTP_ERROR',
+        type: 'HTTP',
         url: 'https://a.test.com/#/binding-doctors',
         time: 1626160278009,
         elapsedTime: 10153,
@@ -603,7 +603,7 @@ eventInfoMap.set(ErrorDataType.vue, {
       type: 'Xhr',
       category: 'exception',
       data: {
-        type: 'HTTP_ERROR',
+        type: 'HTTP',
         url: 'https://a.test.com/#/binding-doctors',
         time: 1626160278009,
         elapsedTime: 10153,
@@ -634,7 +634,7 @@ eventInfoMap.set(ErrorDataType.vue, {
       type: 'Xhr',
       category: 'http',
       data: {
-        type: 'HTTP_ERROR',
+        type: 'HTTP',
         url: 'https://a.test.com/#/binding-doctors',
         time: 1626160291693,
         elapsedTime: 10148,
@@ -657,7 +657,7 @@ eventInfoMap.set(ErrorDataType.vue, {
       type: 'Xhr',
       category: 'exception',
       data: {
-        type: 'HTTP_ERROR',
+        type: 'HTTP',
         url: 'https://a.test.com/#/binding-doctors',
         time: 1626160291693,
         elapsedTime: 10148,
@@ -704,7 +704,7 @@ eventInfoMap.set(ErrorDataType.js, {
   request: 'null',
   response: 'null',
   sdkVersion: '1.2.0',
-  sdkName: '@zyf2e/mitojs',
+  sdkName: 'mitojs',
   customTag: 'null',
   cookies: '{"TRYCATCH_TOKEN":"65247162-0072-4119-b4d2-60a4b02862a8"}',
   stack:
@@ -722,7 +722,7 @@ eventInfoMap.set(ErrorDataType.js, {
       type: 'Xhr',
       category: 'http',
       data: {
-        type: 'HTTP_ERROR',
+        type: 'HTTP',
         url: 'http://test.com/#/drug-venue',
         time: 1608689562029,
         elapsedTime: 438,
@@ -744,7 +744,7 @@ eventInfoMap.set(ErrorDataType.js, {
       type: 'Xhr',
       category: 'http',
       data: {
-        type: 'HTTP_ERROR',
+        type: 'HTTP',
         url: 'http://test.com/#/drug-venue',
         time: 1608689562035,
         elapsedTime: 590,
@@ -766,7 +766,7 @@ eventInfoMap.set(ErrorDataType.js, {
       type: 'Xhr',
       category: 'http',
       data: {
-        type: 'HTTP_ERROR',
+        type: 'HTTP',
         url: 'http://test.com/#/drug-venue',
         time: 1608689562428,
         elapsedTime: 402,
@@ -795,7 +795,7 @@ eventInfoMap.set(ErrorDataType.js, {
       type: 'Xhr',
       category: 'http',
       data: {
-        type: 'HTTP_ERROR',
+        type: 'HTTP',
         url: 'http://test.com/#/drug-venue',
         time: 1608689562943,
         elapsedTime: 524,
@@ -824,7 +824,7 @@ eventInfoMap.set(ErrorDataType.js, {
       type: 'Xhr',
       category: 'http',
       data: {
-        type: 'HTTP_ERROR',
+        type: 'HTTP',
         url: 'http://test.com/#/drug-venue',
         time: 1608689565976,
         elapsedTime: 546,
@@ -846,7 +846,7 @@ eventInfoMap.set(ErrorDataType.js, {
       type: 'Xhr',
       category: 'http',
       data: {
-        type: 'HTTP_ERROR',
+        type: 'HTTP',
         url: 'http://test.com/#/drug-venue',
         time: 1608689571203,
         elapsedTime: 294,
@@ -876,7 +876,7 @@ eventInfoMap.set(ErrorDataType.js, {
       type: 'Xhr',
       category: 'http',
       data: {
-        type: 'HTTP_ERROR',
+        type: 'HTTP',
         url: 'http://test.com/#/drug-venue',
         time: 1608689574239,
         elapsedTime: 337,
@@ -905,7 +905,7 @@ eventInfoMap.set(ErrorDataType.js, {
       type: 'Xhr',
       category: 'http',
       data: {
-        type: 'HTTP_ERROR',
+        type: 'HTTP',
         url: 'http://test.com/#/drug-venue',
         time: 1608689578509,
         elapsedTime: 240,
@@ -934,7 +934,7 @@ eventInfoMap.set(ErrorDataType.js, {
       type: 'Xhr',
       category: 'http',
       data: {
-        type: 'HTTP_ERROR',
+        type: 'HTTP',
         url: 'http://test.com/#/drug-venue',
         time: 1608689579625,
         elapsedTime: 343,
@@ -956,7 +956,7 @@ eventInfoMap.set(ErrorDataType.js, {
       type: 'Xhr',
       category: 'http',
       data: {
-        type: 'HTTP_ERROR',
+        type: 'HTTP',
         url: 'http://test.com/#/drug-venue',
         time: 1608689580557,
         elapsedTime: 189,
@@ -978,7 +978,7 @@ eventInfoMap.set(ErrorDataType.js, {
       type: 'Xhr',
       category: 'http',
       data: {
-        type: 'HTTP_ERROR',
+        type: 'HTTP',
         url: 'http://test.com/#/drug-venue',
         time: 1608689580707,
         elapsedTime: 336,
@@ -1021,7 +1021,7 @@ eventInfoMap.set(ErrorDataType.js, {
             column: 4377,
           },
         ],
-        type: 'JAVASCRIPT_ERROR',
+        type: 'JAVASCRIPT',
         errorId: -1088928641,
       },
       level: 'error',
@@ -1029,7 +1029,7 @@ eventInfoMap.set(ErrorDataType.js, {
     },
   ],
   trackerId: '65247162-0072-4119-b4d2-60a4b02862a8',
-  type: 'JAVASCRIPT_ERROR',
+  type: 'JAVASCRIPT',
   ua:
     'Mozilla/5.0 (Linux; Android 10; Redmi K30 5G Build/QKQ1.191222.002; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/77.0.3865.120 MQQBrowser/6.2 TBS/045435 Mobile Safari/537.36 MMWEBID/6359 MicroMessenger/7.0.21.1800(0x27001539) Process/tools WeChat/arm64 Weixin NetType/4G Language/zh_CN ABI/arm64',
   url: 'http://test.com/#/request-cart',
@@ -1060,7 +1060,7 @@ eventInfoMap.set(ErrorDataType.mini, {
   request: 'null',
   response: 'null',
   sdkVersion: '1.2.3',
-  sdkName: '@zyf2e/mitojs',
+  sdkName: 'mitojs',
   customTag: 'null',
   cookies: '{}',
   stack: '[]',
@@ -1084,7 +1084,7 @@ eventInfoMap.set(ErrorDataType.mini, {
       type: 'Xhr',
       category: 'http',
       data: {
-        type: 'HTTP_ERROR',
+        type: 'HTTP',
         url: 'pages/index/index?',
         elapsedTime: 468,
         level: 'low',
@@ -1106,7 +1106,7 @@ eventInfoMap.set(ErrorDataType.mini, {
       type: 'Xhr',
       category: 'http',
       data: {
-        type: 'HTTP_ERROR',
+        type: 'HTTP',
         url: 'pages/index/index?',
         elapsedTime: 191,
         level: 'low',
@@ -1128,7 +1128,7 @@ eventInfoMap.set(ErrorDataType.mini, {
       type: 'Xhr',
       category: 'http',
       data: {
-        type: 'HTTP_ERROR',
+        type: 'HTTP',
         url: 'pages/index/index?',
         elapsedTime: 62,
         level: 'low',
@@ -1150,7 +1150,7 @@ eventInfoMap.set(ErrorDataType.mini, {
       type: 'Xhr',
       category: 'http',
       data: {
-        type: 'HTTP_ERROR',
+        type: 'HTTP',
         url: 'pages/index/index?',
         elapsedTime: 162,
         level: 'low',
@@ -1196,7 +1196,7 @@ eventInfoMap.set(ErrorDataType.mini, {
       type: 'Xhr',
       category: 'http',
       data: {
-        type: 'HTTP_ERROR',
+        type: 'HTTP',
         url: 'pages/index/index?',
         elapsedTime: 79,
         level: 'low',
@@ -1235,7 +1235,7 @@ eventInfoMap.set(ErrorDataType.mini, {
       type: 'Xhr',
       category: 'http',
       data: {
-        type: 'HTTP_ERROR',
+        type: 'HTTP',
         url: 'pages/statistics/index?',
         elapsedTime: 71,
         level: 'low',
@@ -1339,14 +1339,14 @@ eventInfoMap.set(ErrorDataType.mini, {
         time: 1611133962611,
         level: 'normal',
         url: 'pages/statistics/index?',
-        type: 'JAVASCRIPT_ERROR',
+        type: 'JAVASCRIPT',
         errorId: -576104886,
       },
       time: 1611133962611,
     },
   ],
   trackerId: 'a6e33300-5aff-11eb-b17f-85f38f3d1688',
-  type: 'JAVASCRIPT_ERROR',
+  type: 'JAVASCRIPT',
   ua:
     'Mozilla/5.0 (iPhone; CPU iPhone OS 11_0 like Mac OS X) AppleWebKit/604.1.38 (KHTML, like Gecko) Version/11.0 Mobile/15A372 Safari/604.1 wechatdevtools/1.03.2012121 MicroMessenger/7.0.4 Language/zh_CN webview/ wxwork',
   url: 'pages/statistics/index?',
@@ -1363,7 +1363,7 @@ eventInfoMap.set(ErrorDataType.mini, {
 export const errorInfoMap = new Map()
 errorInfoMap.set(ErrorDataType.js, {
   errorId: 493811206,
-  type: 'JAVASCRIPT_ERROR',
+  type: 'JAVASCRIPT',
   name: 'TypeError',
   message: 'n.getAttribute is not a function',
   eventSum: 380,
@@ -1382,7 +1382,7 @@ errorInfoMap.set(ErrorDataType.js, {
 })
 errorInfoMap.set(ErrorDataType.vue, {
   errorId: 264174268,
-  type: 'HTTP_ERROR',
+  type: 'HTTP',
   name: 'xhr--GET',
   message: 'http请求失败，失败原因：超时 https://a.test.com/api/get_advisory_info',
   eventSum: 41,
@@ -1403,7 +1403,7 @@ errorInfoMap.set(ErrorDataType.vue, {
 })
 errorInfoMap.set(ErrorDataType.react, {
   errorId: -1811448882,
-  type: 'JAVASCRIPT_ERROR',
+  type: 'REACT',
   name: 'TypeError',
   message: "Cannot read property 'status' of undefined",
   eventSum: 5,
@@ -1422,7 +1422,7 @@ errorInfoMap.set(ErrorDataType.react, {
 })
 errorInfoMap.set(ErrorDataType.mini, {
   errorId: -576104886,
-  type: 'JAVASCRIPT_ERROR',
+  type: 'JAVASCRIPT',
   name: "Cannot read property 'defaultView' of undefined;at SelectorQuery callback function",
   message: 'thirdScriptError',
   eventSum: 182,
@@ -1524,7 +1524,7 @@ tagsMap.set(ErrorDataType.js, [
     ],
     sums: [8, 7, 7, 6, 5, 5, 5, 4, 4, 3],
   },
-  { label: 'type', values: ['RESOURCE_ERROR'], sums: [455] },
+  { label: 'type', values: ['RESOURCE'], sums: [455] },
 ])
 
 tagsMap.set(ErrorDataType.vue, [
@@ -1602,7 +1602,7 @@ tagsMap.set(ErrorDataType.vue, [
     ],
     sums: [14, 9, 9, 9, 7, 6, 5, 4, 4, 4],
   },
-  { label: 'type', values: ['PROMISE_ERROR'], sums: [150] },
+  { label: 'type', values: ['PROMISE'], sums: [150] },
 ])
 
 tagsMap.set(ErrorDataType.react, [
@@ -1669,7 +1669,7 @@ tagsMap.set(ErrorDataType.react, [
     ],
     sums: [7, 3, 2, 2, 2, 2, 2, 1, 1, 1],
   },
-  { label: 'type', values: ['RESOURCE_ERROR'], sums: [34] },
+  { label: 'type', values: ['RESOURCE'], sums: [34] },
 ])
 
 tagsMap.set(ErrorDataType.mini, [
@@ -1731,7 +1731,7 @@ tagsMap.set(ErrorDataType.mini, [
     ],
     sums: [30, 11, 10, 9, 9, 7, 6, 6, 5, 5],
   },
-  { label: 'type', values: ['PROMISE_ERROR'], sums: [183] },
+  { label: 'type', values: ['PROMISE'], sums: [183] },
 ])
 
 export const sourceMap = new Map()

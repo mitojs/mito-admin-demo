@@ -4,12 +4,10 @@ import Breadcrumb from '@/modules/Main/modules/Errors/Detail/modules/EventInfo/c
 export default function BreadcrumbDemo() {
   const [tableData, setTableData] = useState([])
   useEffect(() => {
-    console.log('breadcrumb')
     window.addEventListener(
       'message',
       function (messageEvent) {
         if (messageEvent.data.type === 'breadcrumb') {
-          console.log(messageEvent.data.type, messageEvent.data.data)
           setTableData(messageEvent.data.data)
         }
       },

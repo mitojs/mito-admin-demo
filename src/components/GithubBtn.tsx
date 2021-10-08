@@ -5,7 +5,7 @@ import PlainLinkButton from './PlainLinkButton'
 
 export default function GithubBtn() {
   return (
-    <PlainLinkButton onClick={() => window.open('https://github.com/clouDr-f2e/mitojs')} icon={<GithubOutlined />}>
+    <PlainLinkButton onClick={() => window.open('https://github.com/mitojs/mitojs')} icon={<GithubOutlined />}>
       Github
     </PlainLinkButton>
   )
