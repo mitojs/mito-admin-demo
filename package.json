@@ -19,7 +19,7 @@
     "type-check": "tsc --watch",
     "nodemon": "nodemon --verbose  --ignore  /src/  -e  js   --exec \"cross-env NODE_ENV='development' webpack-dev-server  --config build/webpack.dev.config.js   --colors\"",
     "analyz": "webpack-bundle-analyzer --port 8888 ./dist/stats.json",
-    "build": "echo 'none'"
+    "build": "cross-env NODE_ENV='production' APP_ENV='production' webpack --config build/webpack.prod.config.js --progress --colors"
   },
   "lint-staged": {
     "src/**/*.{js,jsx,ts,tsx}": [
