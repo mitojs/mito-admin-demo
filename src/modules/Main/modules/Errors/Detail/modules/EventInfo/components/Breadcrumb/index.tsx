@@ -88,11 +88,11 @@ function XhrDescription(props: { row: RowType }) {
             </Col>
             <Col span={24}>
               <Row>
-                <Col span={6}>
+                <Col span={12}>
                   <span className={(styles.status, styles.weight)}>message:</span>
                   {data.message}
                 </Col>
-                <Col span={6}>接口耗时:{data.elapsedTime}ms</Col>
+                <Col span={12}>接口耗时:{data.elapsedTime}ms</Col>
               </Row>
             </Col>
           </Row>
