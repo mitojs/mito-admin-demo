@@ -33,7 +33,7 @@ function NavLeft() {
     <ContainerDiv>
       <Logo />
       {selectContainer}
-      <DocumentTitle title={route.name}></DocumentTitle>
+      <DocumentTitle title={`${route.name}｜MitoJS 前端监控管理后台`}></DocumentTitle>
     </ContainerDiv>
   )
 }
