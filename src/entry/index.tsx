@@ -61,7 +61,7 @@ function renderApp() {
             <ThemeProvider theme={theme}>
               <RecoilRoot>
                 <SWRConfig value={{ refreshInterval: LuckNumber }}>
-                  <DocumentTitle title="前端监控系统">
+                  <DocumentTitle title="MitoJS · 前端监控管理后台演示">
                     <RouteLoader>{renderRoutes(routesConfig)}</RouteLoader>
                   </DocumentTitle>
                 </SWRConfig>

@@ -1,19 +1,36 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="zh-CN">
   <head>
-    <meta charset="UTF-8" />
+    <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge, chrome=1" />
     <meta name="renderer" content="webkit" />
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
-    <title>前端监控系统</title>
-    <%htmlWebpackPlugin.options.dependencies.css.forEach(css=>{%>
-    <link rel="stylesheet" href="<%= css %>" />
-    <%})%>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <%htmlWebpackPlugin.options.dependencies.css.forEach(css=>{%><link rel="stylesheet" href="<%= css %>" /><%})%>
+    <title>MitoJS · 前端监控管理后台演示</title>
+    <meta name="description" content="查看 MitoJS 前端监控后台里的示例错误、异常堆栈与用户行为轨迹。页面使用模拟数据展示如何定位浏览器中的前端问题。" />
+    <link rel="canonical" href="https://mitojs.github.io/mito-admin-demo/" />
+    <meta property="og:type" content="website" />
+    <meta property="og:locale" content="zh_CN" />
+    <meta property="og:url" content="https://mitojs.github.io/mito-admin-demo/" />
+    <meta property="og:title" content="MitoJS · 前端监控管理后台演示" />
+    <meta property="og:description" content="查看 MitoJS 前端监控后台里的示例错误、异常堆栈与用户行为轨迹。页面使用模拟数据展示如何定位浏览器中的前端问题。" />
+    <meta property="og:image" content="https://mitojs.github.io/mito-admin-demo/demo-preview.png" />
+    <meta property="og:image:alt" content="管理后台演示界面" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="MitoJS · 前端监控管理后台演示" />
+    <meta name="twitter:description" content="查看 MitoJS 前端监控后台里的示例错误、异常堆栈与用户行为轨迹。页面使用模拟数据展示如何定位浏览器中的前端问题。" />
+    <meta name="twitter:image" content="https://mitojs.github.io/mito-admin-demo/demo-preview.png" />
+    <meta name="twitter:image:alt" content="管理后台演示界面" />
   </head>
   <body>
-    <div id="root"></div>
-    <%htmlWebpackPlugin.options.dependencies.js.forEach(js=>{%>
-    <script src="<%=js%>"></script>
-    <%})%>
+    <div id="root">
+      <main>
+        <h1>MitoJS 前端监控管理后台演示</h1>
+        <p>查看 MitoJS 前端监控后台里的示例错误、异常堆栈与用户行为轨迹。页面使用模拟数据展示如何定位浏览器中的前端问题。</p>
+        <p>打开示例错误，结合报错位置、堆栈与出错前的操作记录了解问题。</p>
+        <nav aria-label="错误示例"><a href="#/errors/1/info">查看示例错误详情</a> <a href="https://github.com/mitojs/mito-admin-demo">项目源码</a></nav>
+      </main>
+    </div>
+    <%htmlWebpackPlugin.options.dependencies.js.forEach(js=>{%><script src="<%=js%>"></script><%})%>
   </body>
 </html>

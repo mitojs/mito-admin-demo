@@ -1,19 +1,44 @@
-name: github pages
+name: Build and publish the MitoJS admin demo
 
 on:
+  pull_request:
   push:
-    branches:
-      - master # default branch
+    branches: [master]
+  workflow_dispatch:
+
+permissions:
+  contents: read
 
 jobs:
-  deploy:
-    runs-on: ubuntu-18.04
+  build:
+    runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v2
-      - run: npm install
-      - run: npm run build
-      - name: Deploy docs
-        uses: peaceiris/actions-gh-pages@v3
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
         with:
-          github_token: ${{ secrets.CI_TOKEN }}
-          publish_dir: ./docs
+          node-version: 22
+          cache: npm
+      - run: npm ci --legacy-peer-deps
+      - run: npm run build -- --output-path "$RUNNER_TEMP/mito-admin-site"
+        env:
+          NODE_OPTIONS: --openssl-legacy-provider
+      - uses: actions/upload-pages-artifact@v3
+        if: github.event_name != 'pull_request'
+        with:
+          path: ${{ runner.temp }}/mito-admin-site
+
+  deploy:
+    if: github.event_name != 'pull_request'
+    needs: build
+    runs-on: ubuntu-latest
+    concurrency: github-pages
+    permissions:
+      pages: write
+      id-token: write
+    environment:
+      name: github-pages
+      url: ${{ steps.publish.outputs.page_url }}
+    steps:
+      - name: Deploy the verified site
+        id: publish
+        uses: actions/deploy-pages@v4
