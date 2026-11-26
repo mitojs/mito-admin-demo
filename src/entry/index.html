@@ -28,6 +28,16 @@
         <h1>MitoJS 前端监控管理后台演示</h1>
         <p>查看 MitoJS 前端监控后台里的示例错误、异常堆栈与用户行为轨迹。页面使用模拟数据展示如何定位浏览器中的前端问题。</p>
         <p>打开示例错误，结合报错位置、堆栈与出错前的操作记录了解问题。</p>
+        <section aria-labelledby="mock-cases">
+          <h2 id="mock-cases">从模拟报告定位前端异常</h2>
+          <p>这些是固定的模拟案例，不是实时监控或生产数据。打开详情后，先定位错误类型和堆栈，再用行为轨迹回溯出错前的操作。</p>
+          <ul>
+            <li><a href="#/errors/1/info">Vue：HTTP 异常报告</a>，查看请求与响应上下文。</li>
+            <li><a href="#/errors/2/info">React：JavaScript 异常报告</a>，查看错误堆栈。</li>
+            <li><a href="#/errors/3/info">浏览器 JavaScript 异常示例</a>及<a href="#/errors/4/info">微信小程序异常示例</a>。</li>
+          </ul>
+          <p>想观察真实 SDK 生成的测试上报？打开 <a href="https://mitojs.github.io/react-sdk-demo/">React 19</a>、<a href="https://mitojs.github.io/vue2-sdk-demo/">Vue 2</a> 或 <a href="https://mitojs.github.io/vue3-sdk-demo/">Vue 3</a> 的浏览器演示。<a href="https://mitojs.github.io/mito-doc/zh-CN/sdk/guide/introduction/">阅读 MitoJS 文档</a>。</p>
+        </section>
         <nav aria-label="错误示例"><a href="#/errors/1/info">查看示例错误详情</a> <a href="https://github.com/mitojs/mito-admin-demo">项目源码</a></nav>
       </main>
     </div>
