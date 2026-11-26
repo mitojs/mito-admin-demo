@@ -61,8 +61,14 @@ function renderApp() {
             <ThemeProvider theme={theme}>
               <RecoilRoot>
                 <SWRConfig value={{ refreshInterval: LuckNumber }}>
-                  <DocumentTitle title="MitoJS · 前端监控管理后台演示">
-                    <RouteLoader>{renderRoutes(routesConfig)}</RouteLoader>
+                  <DocumentTitle title="MitoJS · 前端监控管理后台演示（模拟数据）">
+                    <>
+                      <div role="note" style={{ padding: '8px 16px', background: '#e6f7ff', color: '#003a8c' }}>
+                        模拟监控后台：页面使用示例数据，不连接生产监控。{' '}
+                        <a href="https://mitojs.github.io/mito-doc/zh-CN/sdk/guide/introduction/">MitoJS 文档</a>
+                      </div>
+                      <RouteLoader>{renderRoutes(routesConfig)}</RouteLoader>
+                    </>
                   </DocumentTitle>
                 </SWRConfig>
               </RecoilRoot>
